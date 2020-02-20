@@ -1,0 +1,33 @@
+GET http://localhost:4000/citater
+
+###
+GET http://localhost:4000/citater/_id
+
+###
+GET http://localhost:4000/citater/getbykat/kategori_id
+
+###
+POST http://localhost:4000/citater
+Content-Type: application/json
+
+{
+    "titel": "This is an amazing title6",
+    "citatTekst": "Look at this fancy text",
+    "kategori": "5e4be0037a16c27b512b57d8"
+}
+
+###
+DELETE http://localhost:4000/citater/_id
+
+###
+DELETE  http://localhost:4000/citater/all
+
+###
+PATCH http://localhost:4000/citater/_id
+Content-Type: application/json
+
+{
+    "titel": "",
+    "citatTekst": "",
+    "kategori": ""
+}
